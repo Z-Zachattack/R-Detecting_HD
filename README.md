@@ -20,7 +20,7 @@ Examine three data sets to determine whether a machine-learning algorithm can pr
   11. Slope of Peak Exercise ST Segment
   12. Number of Major Vessels (0-3) Colored by Fluoroscopy
   13. Thalassemia
-  14. (Prediction) Heart Disease[1]
+  14. (Prediction) Heart Disease (https://archive.ics.uci.edu/ml/datasets/Heart+Disease)
 Of note, the 14th Attribute, which is the attribute we are attempting to predict, has five potential values. 0 means no presence of heart disease, 1-4 refers to ascendingly more severe heart disease. We will be considering any value from 1-4 as positive, while 0 being negative as our primary
 consideration is whether or not heart disease is present, not the severity of the condition.
 ## Goals:
@@ -30,21 +30,21 @@ Additionally, this project is highly motivated to ensure the predictive model is
 Finally, if there is time, we may attempt to see if geographical regions have markedly different considerations, but this is not explicitly required for the project.
 ## Machine Learning Algorithm:
 
-<u>Precision, Recall, F1-score and Support:</u>
-Precision: be “how many are correctly classified among that class”
-Recall: “how many of this class you find over the whole number of element of this class”
-F1-score: harmonic mean of precision and recall values.
+### Precision, Recall, F1-score and Support:
+**Precision:** be “how many are correctly classified among that class”
+**Recall:** “how many of this class you find over the whole number of element of this class”
+**F1-score:** harmonic mean of precision and recall values.
 * F1 score reaches its best value at 1 and worst value at 0.
 * F1 Score = 2 x ((precision x recall) / (precision + recall))
-Support: # of samples of the true response that lie in that class.
+**Support:** # of samples of the true response that lie in that class.
 
-<u>Decision Tree:</u> 
+### Decision Tree:
 * Creation/training consisted of choosing best Variables in each node and the best split (threshold).
 * Take 'Labeled Input data' (label = decision class) - with a Target Variable and a list of Independent Variables
 * Best Split: Find Best Split for each of the independent variables
 * The use of multiple trees, each trained on slightly different training data, voting together for
 the correct decision is compelling, robust, and clever.
-<u>RandomForest:</u>
+### RandomForest:
 * Create NTREE training sets using bootstrap aggregating (bagging)
 * From each NTREE set create a decision tree using CART (Classification and Regression Trees)
 * RF is the rare ML alg that does not require explicit cross-validation.
