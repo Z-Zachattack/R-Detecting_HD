@@ -21,12 +21,12 @@ Examine three data sets to determine whether a machine-learning algorithm can pr
 * 0 means no presence of heart disease.
 * 1-4 refers to ascendingly more severe heart disease.
   We will be considering any value from 1-4 as positive, thus a value of 0 is the primary consideration since severity is not of conserned in this model.
-## Goals:
+### Goals:
 This project’s primary goal is to predict heart disease in patients using the features available accurately. Due to the sensitive nature of patient data and the moral obligations of doctors, it is imperative that our project prioritize accuracy above all other considerations. Because inaccurate predictions could lead to unnecessary surgeries or even death, there is an emphasis on maximizing the F1-Score (2* precision*recall/precision+recall)). 
 While accuracy is of the utmost importance, we must also ensure that patient privacy is maintained and that any predictive model created respects that privacy.
 Additionally, this project is highly motivated to ensure the predictive model is explainable, as such information would be invaluable to doctors. Next, we will examine different classification models to see which model provides the most accurate data. We will also explore whether some features negatively correlate to heart disease and if there are any other trends within the data.
 Finally, if there is time, we may attempt to see if geographical regions have markedly different considerations, but this is not explicitly required for the project.
-## Machine Learning Algorithm:
+### Machine Learning Algorithm:
 #### Precision, Recall, F1-score and Support:
 **Precision:** be “how many are correctly classified among that class”
 **Recall:** “how many of this class you find over the whole number of element of this class”
