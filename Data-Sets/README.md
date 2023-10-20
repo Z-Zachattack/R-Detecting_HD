@@ -1,5 +1,6 @@
-# Project Summary
+# Data-Set Summary
 ## Description:
+This folder contains five files. processed.cleveland.csv, processed.hungarian.csv, and processed.switzerland.csv are all pulled directly from https://archive.ics.uci.edu/ml/datasets/Heart+Disease: UCI Machine Learning Repository for analysis. Process.RData is the R-Script utilized to analyze these data-sets for duplicates, or erronious data. and hd.csv is the consolidated file of all three cleaned data-sets for use in the Machine Learning project.
 ### Application:
 The application of choice for this project will be R-Script. R-Script is a free environment that is adequate and free. Additionally, With its strong statistical and classification specialization, the R environment is exceptionally situated to examine the chosen data sets.
 ### Training Data:
