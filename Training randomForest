@@ -12,16 +12,20 @@ train.e1 <- read.csv("e1pos.csv", header=TRUE)
 #sets the data.table
 setDF(train.e1)
 setDT(train.i1)
+
 #dim - number of rows, number of columns
 dim(train.e1)
-dim(train.i1) 
+dim(train.i1)
+
 #str - lists the classes
 str(train.e1)
 str(train.i1)
+
 #determines the balance of data
 setDT(train.e1)[,.N/nrow(train.e1),Label]
 setDF(train.i1)[,.N/nrow(train.i1),Label]
 test[,Label := substr(Label,start = 1,stop = nchar(Label)-1)]
+
 #check for missing values in dataset
 table(is.na(train.e1))
 table(is.na(train.i1))
